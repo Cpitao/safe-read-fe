@@ -1,0 +1,37 @@
+name: saferead
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  convert: ^3.1.1
+  cookie_store: ^0.3.5
+  cryptography: ^2.7.0
+  file_picker: ^8.0.0+1
+  flutter:
+    sdk: flutter
+  http: ^1.2.1
+  json_annotation: ^4.8.1
+  msix: ^3.16.7
+  path: ^1.9.0
+  pdfrx: ^1.0.50
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+msix_config:
+  display_name: SafeRead
+  publisher_display_name: Cpt
+  msix_version: 1.0.0.0
+  capabilities: internetClient
+  app_installer:
+    publish_folder_path: ./publish
